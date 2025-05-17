@@ -85,6 +85,7 @@ fi
 
 # --- Configuration ---
 ROOT_DIR="litert/"
+SOURCE_DIR="/host_home/minsung/LiteRT"
 
 PACKAGE_LOCATION="${ROOT_DIR}samples/async_segmentation"
 C_LIBRARY_LOCATION="${BINARY_BUILD_PATH}/${ROOT_DIR}c"
@@ -101,9 +102,9 @@ DEVICE_MODEL_DIR="${DEVICE_BASE_DIR}/models"
 DEVICE_NPU_LIBRARY_DIR="${DEVICE_BASE_DIR}/npu"
 
 # Host paths (relative to this script's location or project root)
-HOST_SHADER_DIR="${PACKAGE_LOCATION}/shaders"
-HOST_TEST_IMAGE_DIR="${PACKAGE_LOCATION}/test_images"
-HOST_MODEL_DIR="${PACKAGE_LOCATION}/models"
+HOST_SHADER_DIR="${SOURCE_DIR}/${PACKAGE_LOCATION}/shaders"
+HOST_TEST_IMAGE_DIR="${SOURCE_DIR}/${PACKAGE_LOCATION}/test_images"
+HOST_MODEL_DIR="${SOURCE_DIR}/${PACKAGE_LOCATION}/models"
 HOST_NPU_LIBRARY_DIR="${BINARY_BUILD_PATH}/${PACKAGE_LOCATION}/async_segmentation.runfiles/qairt/lib/"
 
 # Qualcomm NPU library path
